@@ -1,5 +1,5 @@
 
-# tensorflow 1.4 windows build with AVX2 extensions
+# tensorflow 1.4 CPU only windows build with AVX2 extensions
 
 Checkout the [releases](https://github.com/faisalthaheem/tensorflow-windows/releases) section for the python wheels.
 
