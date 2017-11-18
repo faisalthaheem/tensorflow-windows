@@ -7,7 +7,7 @@ tensorflow version|Python Version|Link
 -------|----|-----------
 1.4.0|3.5.3| [tensorflow-1.4.0-cp35-cp35m-win_amd64.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.4/tensorflow-1.4.0-cp35-cp35m-win_amd64.whl)
 
-#Build Environment
+# Build Environment
 
 Environment|Version
 -------|----
@@ -20,7 +20,7 @@ Python|3.5.3
 Followed official guide at 
 [https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/cmake/README.md](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/cmake/README.md)
 
-#Build Commands
+# Build Commands
 
 CMAKE Configuration Command
 
