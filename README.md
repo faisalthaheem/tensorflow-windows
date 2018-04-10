@@ -1,12 +1,16 @@
 
-# tensorflow 1.4 CPU only windows build with AVX/AVX2 extensions
+# TensorFlow windows builds with AVX/AVX2 extensions
 
 Checkout the [releases](https://github.com/faisalthaheem/tensorflow-windows/releases) section for the python wheels.
 
 tensorflow version|Python Version|Instruction set|Link
 -------|----|----|-----------
+1.7.0|3.5.3|AVX2| [tensorflow-1.7.0-cp35-cp35m-win_amd64.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.7.0/tensorflow-1.7.0-cp35-cp35m-win_amd64.whl)
+1.6.0|3.5.3|AVX2| [tensorflow-1.6.0-cp35-cp35m-win_amd64-avx2.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.6.0/tensorflow-1.6.0-cp35-cp35m-win_amd64-avx2.whl)
+1.5.1|3.5.3|AVX2| [tensorflow-1.5.1-cp35-cp35m-win_amd64-avx2.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.5.1/tensorflow-1.5.1-cp35-cp35m-win_amd64-avx2.whl)
 1.4.0|3.5.3|AVX2| [tensorflow-1.4.0-cp35-cp35m-win_amd64.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.4/tensorflow-1.4.0-cp35-cp35m-win_amd64.whl)
 1.4.0|3.5.3|AVX| [tensorflow-1.4.0-cp35-cp35m-win_amd64-avx.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.4/tensorflow-1.4.0-cp35-cp35m-win_amd64-avx.whl)
+
 
 # Build Environment
 
