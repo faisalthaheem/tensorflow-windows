@@ -17,7 +17,7 @@ tensorflow version|Python Version|Instruction set|Link
 Environment|Version
 -------|----
 OS|Windows 10 x64
-Visual Sutdio|2017 Community Edition
+Visual Sutdio|2017 Community Edition for CPU only builds & 2015 Community Edition for CUDA enabled builds
 CMAKE|3.9.0
 SWIG|swigwin-3.0.12
 Python|3.5.3
@@ -27,7 +27,7 @@ Followed official guide at
 
 # Build Commands
 
-CMAKE Configuration Command
+CMAKE Configuration Command for AVX/AVX2 non CUDA Builds using VS 2017
 
     cmake.exe .. ^
     -A x64 ^
@@ -41,10 +41,30 @@ CMAKE Configuration Command
     -Dtensorflow_TF_NIGHTLY=OFF ^
     -Dtensorflow_WIN_CPU_SIMD_OPTIONS=/arch:AVX2
 
-Build with following command using "**Developer Command Prompt for VS 2017**"
+Or when using CUDA, use the following command to build using toolchain 140 with VS 2015
+
+    cmake.exe .. ^
+    -A x64 ^
+    -G "Visual Studio 14 2015" -T v140 ^
+    -DSWIG_EXECUTABLE="C:/tools/swigwin-3.0.12/swig.exe" ^
+    -DPYTHON_EXECUTABLE="C:/Program Files/Python35/python.exe" ^
+    -DCMAKE_BUILD_TYPE=Release ^
+    -DPYTHON_LIBRARIES="C:/Program Files/Python35/libs/python35.lib" ^
+    -Dtensorflow_BUILD_PYTHON_TESTS=OFF ^
+    -Dtensorflow_BUILD_CC_TESTS=OFF ^
+    -Dtensorflow_TF_NIGHTLY=OFF ^
+    -Dtensorflow_WIN_CPU_SIMD_OPTIONS=/arch:AVX2 ^
+    -Dtensorflow_ENABLE_GPU=ON ^
+    -DCUDNN_HOME="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0"
+
+Build with following command using "**Developer Command Prompt for VS 2017**" or "**Developer Command Prompt for VS 2015**"
 
     msbuild.exe /p:Configuration=Release /maxcpucount:1 /verbosity:minimal tf_python_build_pip_package.vcxproj
 
-Make sure 64bit build tools are used, rename "**Hostx64**" to "**Hostx86**" at location
+Make sure 64bit build tools are used, rename "**Hostx64**" to "**Hostx86**" at following default install location for VS 2017
 
     C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin
+
+and for VS 2015 rename "**amd64**" to "**x86_amd64**" at the following default install location
+    
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin
