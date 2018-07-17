@@ -6,6 +6,7 @@ Checkout the [releases](https://github.com/faisalthaheem/tensorflow-windows/rele
 TF Version|Python Version|Instruction set|GPU Enabled|Link
 -------|----|----|----|-----------
 1.8.0|3.5.3|AVX2|| [tensorflow-1.8.0-cp35-cp35m-win_amd64.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.8.0/tensorflow-1.8.0-cp35-cp35m-win_amd64.whl)
+1.7.1|3.5.3|AVX2|Yes| [tensorflow_gpu-1.7.1-cp35-cp35m-win_amd64-gpu.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.7.1/tensorflow_gpu-1.7.1-cp35-cp35m-win_amd64-gpu.whl)
 1.7.1|3.5.3|AVX2|| [tensorflow-1.7.1-cp35-cp35m-win_amd64.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.7.1/tensorflow-1.7.1-cp35-cp35m-win_amd64.whl)
 1.7.0|3.5.3|AVX2|| [tensorflow-1.7.0-cp35-cp35m-win_amd64.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.7.0/tensorflow-1.7.0-cp35-cp35m-win_amd64.whl)
 1.7.0|3.5.3|AVX2|Yes| [tensorflow_gpu-1.7.0-cp35-cp35m-win_amd64-avx2-cuda9.whl](https://github.com/faisalthaheem/tensorflow-windows/releases/download/1.7.0/tensorflow_gpu-1.7.0-cp35-cp35m-win_amd64-avx2-cuda9.whl)
